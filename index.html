@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-arg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class=logo src="imagenes/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+       <div class="main">
+
+
+            <div class="left">       
+                <textarea id="textArea"
+                class="text-area" 
+                placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="left-footer">
+                    <img class="signo" src="imagenes/Group.png" alt="Signo de exclamación">
+                
+                    <p class="frase-1">Solo letras minúsculas y sin acentos</p>
+
+                    <div class="left-botones">
+                        <button
+                            id="botonEncriptar" 
+                            class="btn-encriptar"
+                            type="button"
+                            >
+                            Encriptar
+                        </button>
+
+                        <button
+                            id="botonDesencriptar"
+                            class="btn-desencriptar"
+                            type="button"
+                            >
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="right" class="right">
+            
+                <img id="muneco" class="muneco" src="imagenes/Muneco.png" alt="Muñeco">
+
+                    <textarea id="mensajeFinal"
+                    class="mensaje-final" 
+                    placeholder="Ningún mensaje fue encontrado"></textarea>
+                    
+                    <p id="frase2" 
+                    class="frase-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+
+                    <button
+                    id="botonCopiar"
+                    class="btn-copiar oculto"
+                    type="button"
+                    >
+                    Copiar
+                    </button>
+            </div>
+        </div> 
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
